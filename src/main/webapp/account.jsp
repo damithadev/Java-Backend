@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Account</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,15 +42,15 @@
                         <span onclick="Register()">Register</span>
                         <hr id="indicator">
                     </div>
-                    <form action="" id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" name="" id="" placeholder="Password">
+                    <form action="/login" method="post" id="LoginForm">
+                        <input type="text" name="emaill" id="emaill" placeholder="Email">
+                        <input type="password" name="passwordd" id="passwordd" placeholder="Password">
                         <button type="submit" class="btn">Login</button>
                         <a href="">Forgot Password</a>
                     </form>
 
                     <form action="/register" method="post" id="RegForm">
-                        <input type="text" name="username" id="username" placeholder="Username">
+                        <input type="text" name="name" id="name" placeholder="Full Name">
                         <input type="email" name="email" id="email" placeholder="Email">
                         <input type="password" name="password" id="password" placeholder="Password">
                         <button type="submit" class="btn">Register</button>

@@ -3,6 +3,7 @@ package com.example.java_project;
 import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import jakarta.servlet.ServletException;
@@ -10,34 +11,33 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 
-@WebServlet(name = "register", value = "/register")
-public class register extends HttpServlet {
+@WebServlet(name = "login", value = "/login")
+public class login extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String fullname = req.getParameter("name");
-        String email = req.getParameter("email");
-        String password = req.getParameter("password");
+        String email = req.getParameter("emaill");
+        String password = req.getParameter("passwordd");
 
         Connection connection = null;
         PreparedStatement statement = null;
+        ResultSet resultSet = null;
 
         try {
             connection = dbConnection.getConnection();
-            String sql = "INSERT INTO user (name, email, password) VALUES (?, ?, ?)";
+            String sql = "SELECT * FROM user WHERE email = ? AND password = ?";
             statement = connection.prepareStatement(sql);
-            statement.setString(1, fullname);
-            statement.setString(2, email);
-            statement.setString(3, password);
-            int rowsInserted = statement.executeUpdate();
+            statement.setString(1, email);
+            statement.setString(2, password);
 
-            if (rowsInserted > 0) {
+            resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
                 HttpSession session = req.getSession();
                 session.setAttribute("userEmail", email);
-
                 resp.sendRedirect("/product.jsp");
             } else {
                 resp.sendRedirect("/account.jsp");
@@ -46,6 +46,7 @@ public class register extends HttpServlet {
             e.printStackTrace();
         } finally {
             try {
+                if (resultSet != null) resultSet.close();
                 if (statement != null) statement.close();
                 if (connection != null) dbConnection.closeConnection(connection);
             } catch (SQLException e) {
