@@ -49,10 +49,10 @@
                         <a href="">Forgot Password</a>
                     </form>
 
-                    <form action="" id="RegForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" name="" id="" placeholder="Password">
+                    <form action="/register" method="post" id="RegForm">
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Password">
                         <button type="submit" class="btn">Register</button>
 
                     </form>
@@ -75,7 +75,7 @@
     <div class="right-section">
         <form action="#" method="post" class="signup-form">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="email" id="emai" name="email" placeholder="Enter your email" required>
             <button type="submit">Sign Up</button>
         </form>
     </div>
