@@ -30,15 +30,16 @@
 </div>
 
 <div class="small-container">
+
     <div class="row row-2">
         <h2>All Products</h2>
-        <select>
-            <option value="">Default Shorting</option>
-            <option value="">Short by price</option>
-            <option value="">Short by Popularity</option>
-            <option value="">Short rating</option>
-            <option value="">Short by sale</option>
-        </select>
+<%--        <select>--%>
+<%--            <option value="">Default Shorting</option>--%>
+<%--            <option value="">Short by price</option>--%>
+<%--            <option value="">Short by Popularity</option>--%>
+<%--            <option value="">Short rating</option>--%>
+<%--            <option value="">Short by sale</option>--%>
+<%--        </select>--%>
     </div>
 
 
@@ -157,14 +158,73 @@
             </div>
             <p>$100</p>
         </div>
+
+        <div class="col-4">
+            <img src="images/p01.jpeg" alt="">
+            <h4>Product 1</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>$100</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/p02.jpeg" alt="">
+            <h4>Product 1</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>$100</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/p03.jpeg" alt="">
+            <h4>Product 1</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>$100</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/p04.jpeg" alt="">
+            <h4>Product 1</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>$100</p>
+        </div>
+
     </div>
-    <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
-    </div>
+
+
+<%--    <div class="page-btn">--%>
+<%--        <span>1</span>--%>
+<%--        <span>2</span>--%>
+<%--        <span>3</span>--%>
+<%--        <span>4</span>--%>
+<%--        <span>&#8594;</span>--%>
+<%--    </div>--%>
 
 </div>
 
