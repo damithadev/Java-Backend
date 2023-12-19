@@ -32,26 +32,9 @@
     <p>Welcome to our Customer Reviews page. We appreciate your feedback!</p>
 </header>
 
-<section class="reviews-section">
-    <article class="review">
-        <div class="user-info">
-            <img src="images/user-1.png" alt="Customer Photo">
-            <p>John Doe</p>
-        </div>
-        <div class="review-content">
-            <p>"Amazing service! The quality of products is outstanding, and the staff is very helpful. I highly
-                recommend Green Supermarket."</p>
-            <div class="rating">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-            </div>
-        </div>
-    </article>
 
-    <!-- Add more reviews as needed -->
-
-</section>
-
-<section class="submit-review-section">
+<%--review submitting section--%>
+<section class="submit-review-section" style="margin-bottom: 100px;">
     <h2>Submit Your Review</h2>
     <form action="/addReview" method="post">
         <label for="name">Your Name:</label>
@@ -64,6 +47,13 @@
     </form>
 </section>
 
+
+<%--review display section--%>
+<section class="reviews-section" style="margin-bottom: 100px;">
+    <div id="review-container">
+<%--        reviews will display here--%>
+    </div>
+</section>
 
 
 
@@ -113,7 +103,59 @@
     else {
         console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
     }
-    // ]]>
+    // ]]>\
+
+
+
+
+
+
+
+
+
+    // Fetch data from the servlet
+    fetch('/retrieveReviews')
+        .then(response => response.json())
+        .then(data => {
+
+            data.forEach(review => {
+                const id = review.id;
+                const name = review.name;
+                const message = review.review;
+
+                const reviewContainer = document.getElementById('review-container');
+
+                const card = document.createElement('div');
+                card.className = 'review-card';
+
+
+
+                const reviewCard =
+
+                    ` <article class="review">
+                        <div class="user-info" style="padding-bottom: 10px">
+                            <i class="fa-solid fa-user fa-lg"></i>
+                            <p style="padding-left: 10px">`+name+`</p>
+                        </div>
+                        <div class="review-content">
+                            <p>"`+message+`"</p>
+                            <div class="rating">
+                                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                            </div>
+                        </div>
+                    </article>`;
+
+                card.innerHTML = reviewCard;
+
+                reviewContainer.appendChild(card);
+
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+
 </script>
 </body>
 </html>

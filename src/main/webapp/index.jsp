@@ -4,6 +4,7 @@
 <head>
   <title>JSP - Hello World</title>
   <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -254,75 +255,59 @@
       <div class="col-2">
         <img src="images/honey_in_jar-removebg-preview.png" alt="" class="offer">
       </div>
-      <div class="col-2">
-        <h2>Honey Harvest Special</h2>
 
-        <small><samp>Sweeten the deal with our exclusive Honey Harvest Special!</samp><br> Dive into the
-          pure,natural goodness of our golden honey at an unbeatable price. Indulge in the richness of
+      <div class="col-2 pl-10">
+        <h2>Honey Harvest Special</h2>
+        <samp>Sweeten the deal with our exclusive Honey Harvest Special!</samp><br>
+          <p>
+          Dive into the pure,natural goodness of our golden honey at an unbeatable price. Indulge in the richness of
           nature's delight with this limited-time offer – because every drop is a taste of sweet
-          perfection.</small>
-        <a href="" class="btn">Buy Now &#8594;</a>
+          perfection.</p>
+        <button class="px-7 mt-8 rounded-2xl py-2 bg-[#641c27] hover:bg-[#641c27] text-white">Buy Now &#8594; </button>
       </div>
     </div>
   </div>
 </div>
 
+
+
+
 <!-- testimonial -->
-
-
 <div class="testimonial">
   <div class="small-container">
     <div class="row">
-      <div class="col-3">
-        <i class="fa fa-quote-left"></i>
-        <p>Step into the world of sweetness with our Honey Harvest Special. We believe in the power of pure,
-          natural honey to transform everyday moments into extraordinary experiences.</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-        <img src="images/user-1.png" alt="">
-        <h3>User 01</h3>
 
+      <div class="col-3">
+        <i class="fa-solid fa-truck fa-3x pt-10"></i>
+       <h4 class="mt-5 mb-8 font-semibold">Free Delivery up to 5000 </h4>
+        <p class="pb-8">Elevate your shopping experience with Green Supermarket – relish the convenience of complimentary doorstep delivery on orders over 5000, enhancing your healthy lifestyle effortlessly.</p>
       </div>
 
       <div class="col-3">
-        <i class="fa fa-quote-left"></i>
-        <p>Step into the world of sweetness with our Honey Harvest Special. We believe in the power of pure,
-          natural honey to transform everyday moments into extraordinary experiences.</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-        <img src="images/user-2.png" alt="">
-        <h3>User 02</h3>
-
+        <i class="fa-solid fa-percent fa-3x pt-10"></i>
+        <h4 class="mt-5 mb-8 font-semibold">More Discounts </h4>
+        <p class="pb-8"> Unlock a world of savings at Green Supermarket Ecommerce Platform! Enjoy more discounts on eco-friendly products, bringing sustainability and affordability together.</p>
       </div>
 
       <div class="col-3">
-        <i class="fa fa-quote-left"></i>
-        <p>Step into the world of sweetness with our Honey Harvest Special. We believe in the power of pure,
-          natural honey to transform everyday moments into extraordinary experiences.</p>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-        <img src="images/user-3.png" alt="">
-        <h3>User 03</h3>
-
+        <i class="fa-solid fa-leaf fa-3x pt-10"></i>
+        <h4 class="mt-5 mb-8 font-semibold">Fresh Items</h4>
+        <p class="pb-8">Indulge in a feast for the senses with Green Supermarket's Ecommerce Platform, where freshness meets convenience. Explore a bounty of farm-to-table goodness today.</p>
       </div>
+
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
 
 <!-- brands -->
 <div class="brands">
@@ -355,6 +340,5 @@
 
 <!-- Js for toggle menu -->
 <script src="script.js"></script>
-
 </body>
 </html>

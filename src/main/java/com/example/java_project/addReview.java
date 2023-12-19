@@ -33,7 +33,7 @@ public class addReview extends HttpServlet {
             int rowsInserted = statement.executeUpdate();
 
             if (rowsInserted > 0) {
-                resp.sendRedirect("/index.jsp");
+                resp.sendRedirect("/coustomer_reviews.jsp");
             } else {
                 resp.sendRedirect("/coustomer_reviews.jsp");
             }
