@@ -53,7 +53,7 @@
 
 <section class="submit-review-section">
     <h2>Submit Your Review</h2>
-    <form action="#" method="post">
+    <form action="/addReview" method="post">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
 

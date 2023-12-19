@@ -65,21 +65,19 @@
 
 
 <!-- Newsletter Signup Section -->
-
-
-<section class="newsletter-section">
-    <div class="left-section">
-        <h3>Sign Up for Newsletter</h3>
-        <p><span>Get email</span> updates about our latest shop and special offers.</p>
-    </div>
-    <div class="right-section">
-        <form action="#" method="post" class="signup-form">
-            <label for="email">Email:</label>
-            <input type="email" id="emai" name="email" placeholder="Enter your email" required>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
-</section>
+<%--<section class="newsletter-section">--%>
+<%--    <div class="left-section">--%>
+<%--        <h3>Sign Up for Newsletter</h3>--%>
+<%--        <p><span>Get email</span> updates about our latest shop and special offers.</p>--%>
+<%--    </div>--%>
+<%--    <div class="right-section">--%>
+<%--        <form action="#" method="post" class="signup-form">--%>
+<%--            <label for="email">Email:</label>--%>
+<%--            <input type="email" id="emai" name="email" placeholder="Enter your email" required>--%>
+<%--            <button type="submit">Sign Up</button>--%>
+<%--        </form>--%>
+<%--    </div>--%>
+<%--</section>--%>
 
 
 
