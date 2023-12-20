@@ -344,7 +344,6 @@
     } else {
       cartItems.push({ productId, quantity: 1 });
     }
-
     localStorage.setItem("cart", JSON.stringify(cartItems));
      alert("Product added to cart!");
   }

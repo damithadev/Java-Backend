@@ -101,6 +101,19 @@ fetch('/retrieveProducts')
     .catch(error => {
         console.error('Error fetching data:', error);
     });
+
+    function addToCart(productId) {
+        let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        const existingItem = cartItems.find(item => item.productId === productId);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cartItems.push({ productId, quantity: 1 });
+        }
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+        alert("Product added to cart!");
+    }
 </script>
 </body>
 </html>
