@@ -9,7 +9,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-    <title>GREEN Supermarket-Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>All Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,189 +43,9 @@
 <%--        </select>--%>
     </div>
 
-
-
-    <div class="row">
-        <div class="col-4">
-            <img src="images/p05jpeg.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/p06.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/mushroom.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/banana.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
+    <div id="product-container" class="grid grid-cols-4 mb-20 gap-10">
+        <%--        product cards will display here--%>
     </div>
-
-    <div class="row">
-        <div class="col-4">
-            <img src="images/latest p1.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/latest_p2-removebg-preview.png" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/latest p3.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/latest p4.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/p01.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/p02.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/p03.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-        <div class="col-4">
-            <img src="images/p04.jpeg" alt="">
-            <h4>Product 1</h4>
-            <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-
-            </div>
-            <p>$100</p>
-        </div>
-
-    </div>
-
-
-<%--    <div class="page-btn">--%>
-<%--        <span>1</span>--%>
-<%--        <span>2</span>--%>
-<%--        <span>3</span>--%>
-<%--        <span>4</span>--%>
-<%--        <span>&#8594;</span>--%>
-<%--    </div>--%>
 
 </div>
 
@@ -237,5 +58,49 @@
 
 <!-- Js for toggle menu -->
 <script src="script.js"></script>
+
+<script>
+// Fetch data from the servlet
+fetch('/retrieveProducts')
+    .then(response => response.json())
+    .then(data => {
+
+        data.forEach(product => {
+            const id = product.id;
+            const name = product.name;
+            const price = product.price;
+            const image = product.image;
+
+            const productContainer = document.getElementById('product-container');
+
+            const card = document.createElement('div');
+            card.className = 'product-card';
+
+            const productCard =
+
+                `<div class="col-4">
+                    <img src="images/`+image+`" alt="">
+                    <h4>`+name+`</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <button onclick="addToCart(`+id+`)"><i class="fa-solid fa-cart-shopping cart"></i></button>
+                    </div>
+                    <p>$`+price+`</p>
+                </div>`;
+
+            card.innerHTML = productCard;
+
+            productContainer.appendChild(card);
+
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+    });
+</script>
 </body>
 </html>

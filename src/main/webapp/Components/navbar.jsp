@@ -6,7 +6,7 @@
         <ul id="menuItem">
             <li><a href="index.jsp">Home</a></li>
             <li><a href="product.jsp">Products</a></li>
-            <li><a href="coustomer_reviews.jsp">Coustomer Reviews</a></li>
+            <li><a href="customer_reviews.jsp">Customer Reviews</a></li>
             <li><a href="account.jsp">Account</a></li>
         </ul>
     </nav>

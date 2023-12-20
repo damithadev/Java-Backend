@@ -9,8 +9,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="coustomer_reviews.css">
-    <title>GREEN Supermarket-Coustomer_Reviews</title>
+    <link rel="stylesheet" href="customer_reviews.css">
+    <title>Customer Reviews</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
