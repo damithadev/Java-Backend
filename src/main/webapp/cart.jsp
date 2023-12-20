@@ -21,6 +21,13 @@
           crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<%
+    // Access the HttpSession
+    HttpSession checkEmail = request.getSession();
+
+    // Get the userEmail from the session
+    String userEmail = (String) checkEmail.getAttribute("userEmail");
+%>
 <div class="header">
 
     <div class="container">
@@ -61,6 +68,17 @@
             <tr>
                 <td>Bill With tax</td>
                 <td id="billWithTax">Null</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button <% if (userEmail == null) { %>disabled<% } %> id="checkoutButton" class="<% if (userEmail == null) { %>hover:bg-gray-500 cursor-not-allowed<% } %> mt-5 py-3 px-20 bg-[#641c27] text-white">Checkout</button></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <% if (userEmail == null) { %>
+                    <p class="text-red-500 text-sm">Please <a href="/account.jsp"> <u><strong>login</strong></u></a> to the system before placing the order.</p>
+                    <% } %>
+                </td>
             </tr>
         </table>
     </div>
@@ -193,7 +211,7 @@
 
         console.log(orderDetails)
         //Send order details to the backend using fetch API
-        fetch('/sendOrderData', {
+        fetch('/orderDetails', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -209,7 +227,7 @@
                     //set payment amount in localstorage
                     localStorage.setItem('payment', totalBillAmount);
                     // Redirect to payment.jsp
-                    window.location.href = 'payment.jsp';
+                    window.location.href = 'index.jsp';
                 } else {
                     // Handle errors or failed orders
                     console.error('Error placing order:', response.statusText);
