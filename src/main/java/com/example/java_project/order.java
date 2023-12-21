@@ -8,7 +8,6 @@ public class order {
         private int productId;
         private int quantity;
 
-        // Add getters and setters for productId and quantity
         public int getProductId() {
             return productId;
         }

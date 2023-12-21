@@ -19,13 +19,13 @@ public class email {
 
         Session session = Session.getInstance(properties, new Authenticator() {
             protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-                return new javax.mail.PasswordAuthentication("techpulselk@gmail.com", "");
+                return new javax.mail.PasswordAuthentication("greensupermarketlk@gmail.com", "");
             }
         });
 
         try {
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("techpulselk@gmail.com")); // Replace with your email
+            message.setFrom(new InternetAddress("greensupermarketlk@gmail.com"));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail));
             message.setSubject(subject);
             message.setText(messageBody);
